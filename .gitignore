@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.ipynb_checkpoints/
+.poetry/
+.venv/
+.ruff_cache/
+.pytype/
+.mypy_cache/
+.pytest_cache/
+dist/
+build/
+
+# Conda / envs
+.env
+/.env.*
+/env/
+/venv/
+/.conda/
+
+# IDEs
+.vscode/
+.idea/
+
+# Data & models (local only)
+# datasets/
+models/
+storage/
+logs/
+cache/
+.local/
+tmp/
+
+# Chroma
+chroma/
+
+# OS cruft
+.DS_Store
+Thumbs.db

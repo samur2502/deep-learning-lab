@@ -1,0 +1,54 @@
+name: rag-test
+channels:
+  - conda-forge
+  - nvidia
+  - pytorch
+dependencies:
+  - python=3.11
+  - git
+  - pip
+  - numpy
+  - pandas
+  - jupyterlab
+  - ipykernel
+  - uvicorn
+  - fastapi
+  - pydantic
+  - pytorch
+  - torchvision
+  - pytorch-cuda=12.1  
+  - pip:
+      - python-dotenv
+      - httpx
+      - openai
+      # HF / Transformers
+      - transformers
+      - accelerate
+      - bitsandbytes
+      - safetensors
+      - huggingface_hub[cli]
+      - sentencepiece
+      - datasets
+
+      # LangChain + tools
+      - langchain
+      - langchain-community
+      - langchain-openai
+      - langchain-ollama
+      - langchain-chroma
+      - langchain-huggingface
+      - langchainhub
+      - langsmith
+      - langchain-text-splitters
+      - tiktoken
+      # Vector DB
+      - chromadb
+      # QoL
+      - rapidfuzz
+      - ipywidgets
+
+
+
+# conda env create -f environment.yml
+# later updates:
+# conda env update -n rag-test -f environment.yml

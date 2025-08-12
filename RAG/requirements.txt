@@ -1,0 +1,45 @@
+# Python set by base image or runtime (3.11 recommended)
+
+# Core
+numpy
+pandas
+jupyterlab
+ipykernel
+
+# FastAPI
+fastapi
+uvicorn
+
+# LLM / HF
+transformers
+accelerate
+safetensors
+huggingface_hub[cli]
+sentencepiece
+datasets
+
+# LangChain stack
+langchain
+langchain-community
+langchain-openai
+langchain-ollama
+langchain-chroma
+langchain-huggingface
+langchainhub
+langsmith
+langchain-text-splitters
+tiktoken
+
+# Vector DB
+chromadb
+
+# Extras
+openai
+httpx
+python-dotenv
+rapidfuzz
+ipywidgets
+
+# PyTorch
+torch
+torchvision

@@ -39,3 +39,7 @@ chroma/
 # OS cruft
 .DS_Store
 Thumbs.db
+
+# Other files
+RAG/.env.txt
+RAG/code_base/

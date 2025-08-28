@@ -26,6 +26,7 @@ build/
 
 # Data & models (local only)
 # datasets/
+data/
 models/
 storage/
 logs/
@@ -35,6 +36,7 @@ tmp/
 
 # Chroma
 chroma/
+chroma_pyspark_basic/
 
 # OS cruft
 .DS_Store

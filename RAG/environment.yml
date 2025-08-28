@@ -1,54 +1,70 @@
-name: rag-test
+name: rag-env
+
 channels:
   - conda-forge
   - nvidia
   - pytorch
+
 dependencies:
   - python=3.11
+  - openjdk=17
   - git
   - pip
+
   - numpy
   - pandas
+  - pyarrow
   - jupyterlab
   - ipykernel
-  - uvicorn
+  - pyspark>=4
+
   - fastapi
-  - pydantic
+  - pydantic>=2
+
   - pytorch
   - torchvision
   - pytorch-cuda=12.1  
+  
   - pip:
-      - python-dotenv
-      - httpx
-      - openai
-      # HF / Transformers
-      - transformers
-      - accelerate
-      - bitsandbytes
-      - safetensors
-      - huggingface_hub[cli]
-      - sentencepiece
-      - datasets
-
-      # LangChain + tools
-      - langchain
-      - langchain-community
-      - langchain-openai
-      - langchain-ollama
-      - langchain-chroma
-      - langchain-huggingface
-      - langchainhub
-      - langsmith
-      - langchain-text-splitters
-      - tiktoken
-      # Vector DB
-      - chromadb
-      # QoL
-      - rapidfuzz
-      - ipywidgets
-
+    - python-dotenv
+    - requests
+    - beautifulsoup4
+    - lxml
+    - httpx
+    - openai
+    - tiktoken
+    - rapidfuzz
+    - ftfy
+    
+    # HF / Transformers
+    - transformers
+    - accelerate
+    - bitsandbytes 
+    - safetensors
+    - huggingface_hub[cli]
+    - sentencepiece
+    - datasets
+    
+    # LangChain + tools
+    - langchain
+    - langchain-community
+    - langchain-openai
+    - langchain-huggingface
+    - langchain-chroma
+    - langchainhub
+    - langsmith
+    - langchain-text-splitters
+    
+    # Vector DBs
+    - chromadb
+    
+    # API server
+    - uvicorn[standard]
+    
+    # Jupyter UX
+    - ipywidgets
 
 
 # conda env create -f environment.yml
 # later updates:
-# conda env update -n rag-test -f environment.yml
+# conda env update -n rag-env -f environment.yml

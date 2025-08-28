@@ -3,43 +3,53 @@
 # Core
 numpy
 pandas
+pyarrow
+pyspark>=4
 jupyterlab
 ipykernel
 
 # FastAPI
 fastapi
+pydantic>=2
 uvicorn
+
+# HTTP / Utils
+requests
+httpx
+python-dotenv
+rapidfuzz
+ftfy
+
+# HTML parsing
+beautifulsoup4
+lxml
 
 # LLM / HF
 transformers
 accelerate
+bitsandbytes
 safetensors
 huggingface_hub[cli]
 sentencepiece
 datasets
+tiktoken
 
 # LangChain stack
 langchain
 langchain-community
 langchain-openai
-langchain-ollama
 langchain-chroma
 langchain-huggingface
 langchainhub
 langsmith
 langchain-text-splitters
-tiktoken
 
 # Vector DB
 chromadb
 
-# Extras
-openai
-httpx
-python-dotenv
-rapidfuzz
-ipywidgets
-
 # PyTorch
 torch
 torchvision
+
+# Jupyter UX
+ipywidgets
